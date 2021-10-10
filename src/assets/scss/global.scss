@@ -1,0 +1,260 @@
+$gray_color_1:#4D4E50;
+$gray_color_2:#747577;
+$gray_color_3:#ABACAF;
+$gray_color_5:#D2D3D6;
+$gray_color_6:#F4F5F8;
+$gray_color_7:#A9A9A9;
+$main-color: #157EFF;
+$black-color:#333333;
+$white-color:#FFFFFF;
+
+@mixin theme-title-desktop-dark {
+    font-family: noto-sans-cjk-kr, sans-serif;
+    font-weight: 400;
+    font-size: 2.5em;
+    line-height: 1.2;
+    color: $black-color;
+    @media screen and (max-width: 768px) {
+        font-size: 2em;
+        padding: 0 1em;
+    }
+}
+
+@mixin theme-title-desktop-light {
+    font-family: noto-sans-cjk-kr, sans-serif;
+    font-weight: 400;
+    font-size: 2.5em;
+    line-height: 1.2;
+    color: $white-color;
+    @media screen and (max-width: 768px) {
+        font-size: 2em;
+    }
+}
+
+@mixin theme-subtitle-desktop-dark {
+    font-family: noto-sans-cjk-kr, sans-serif;
+    font-weight: 300;
+    font-size: 1.125em;
+    line-height: 1.33;
+    color: $black-color;
+    @media screen and (max-width: 768px) {
+        font-size: 0.75em;
+    }
+}
+
+@mixin theme-subtitle-desktop-blue {
+    font-family: noto-sans-cjk-kr, sans-serif;
+    font-weight: 300;
+    font-size: 1.125em;
+    line-height: 1.67;
+    color: $main-color;
+    @media screen and (max-width: 768px) {
+        font-size: 0.75em;
+    }
+}
+
+@mixin theme-subtitle-desktop-light {
+    font-family: noto-sans-cjk-kr, sans-serif;
+    font-weight: 300;
+    font-size: 1.125em;
+    line-height: 1.33;
+    color: $white-color;
+    @media screen and (max-width: 768px) {
+        font-size: 0.75em;
+    }
+}
+
+@mixin theme-card-title-desktop-dark {
+    font-family: noto-sans-cjk-kr, sans-serif;
+    font-weight: 400;
+    font-size: 1.4375em;
+    line-height: 1.47;
+    color: $black-color;
+}
+
+@mixin theme-card-title-desktop-light {
+    font-family: noto-sans-cjk-kr, sans-serif;
+    font-weight: 400;
+    font-size: 1.25em;
+    color: $white-color;
+}
+
+@mixin theme-content-desktop-dark {
+    font-family: noto-sans-cjk-kr, sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 30px;
+    color: $black-color;
+}
+
+@mixin theme-content-desktop-light {
+    font-family: noto-sans-cjk-kr, sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    color: $white-color;
+}
+
+@mixin theme-content-desktop-dark2 {
+    font-family: noto-sans-cjk-kr, sans-serif;
+    font-weight: 300;
+    font-size: 0.875em;
+    line-height: 2.14;
+    color: $black-color;
+}
+
+@mixin theme-content-desktop-light2 {
+    font-family: noto-sans-cjk-kr, sans-serif;
+    font-weight: 300;
+    font-size: 0.875em;
+    line-height: 2.14;
+    color: $white-color;
+}
+
+
+@mixin theme-logo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18.5px;
+    line-height: 1.27;
+    letter-spacing: normal;
+    color: $main-color;
+    @media screen and (max-width: 768px) {
+        font-size: 35.5px;
+    }
+}
+
+@mixin theme-banner-title {
+    font-family: noto-sans-cjk-kr, sans-serif;
+    font-weight: 600;
+    font-size: 3.125em;
+    line-height: 1.3;
+    color: $white-color;
+    @media screen and (max-width: 768px) {
+        font-size: 1.125em;
+    }
+}
+
+@mixin theme-banner-subtitle {
+    font-family: noto-sans-cjk-kr, sans-serif;
+    font-weight: 300;
+    font-size: 0.875em;
+    line-height: 1.71;
+    color: $white-color;
+}
+
+@mixin theme-banner-button-text {
+    font-family: noto-sans-cjk-kr, sans-serif;
+    font-weight: 500;
+    font-size: 0.875em;
+    line-height: 2.86;
+    color: $white-color;
+}
+
+@mixin theme-button-blue {
+		padding: 1.0625em 2.375em;
+		border-radius: 60px;
+		background-color: $main-color;
+    p {
+			font-family: noto-sans-cjk-kr, sans-serif;
+			font-weight: 500;
+			font-size: 1em;
+			line-height: 2.5;
+			color: $white-color;
+			margin-bottom: 0;
+			float: left;
+    }
+    i {
+			color: #FFFFFF;
+			font-size: 0.75em;
+			float: right;
+			transform: translateY(15px);
+    }
+}
+
+@mixin theme-button-light {
+	padding: 1.0625em 2.375em;
+	border-radius: 60px;
+	background-color: $black-color;
+	p {
+		font-family: noto-sans-cjk-kr, sans-serif;
+		font-weight: 500;
+		font-size: 1em;
+		line-height: 2.5;
+		color: $white-color;
+		margin-bottom: 0;
+		float: left;
+	}
+	i {
+		color: #FFFFFF;
+		font-size: 0.75em;
+		float: right;
+		transform: translateY(15px);
+	}
+}
+
+@mixin theme-montserrat-title {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 1em;
+	line-height: 0.5;
+	letter-spacing: normal;
+	color: $main-color;
+}
+
+@mixin theme-montserrat-title2 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 3em;
+	line-height: 1.25;
+	letter-spacing: normal;
+	color: $white-color;
+    @media screen and (max-width: 768px) {
+        font-size: 2em;
+    }
+}
+
+@mixin theme-contact {
+	font-family: noto-sans-cjk-kr, sans-serif;
+	font-weight: 300;
+	font-size: 0.875em;
+	line-height: 1.71;
+	letter-spacing: normal;
+	color: $gray_color_7;
+}
+
+@mixin theme-footer-navigation {
+	font-family: noto-sans-cjk-kr, sans-serif;
+	font-weight: 300;
+	font-size: 0.875em;
+	line-height: 1.71;
+	color: $black-color;
+}
+
+@mixin kr_regular-12 {
+    font-family: noto-sans-cjk-kr, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 48px;
+}
+
+@mixin kr_medium {
+    font-family: noto-sans-cjk-kr, sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 30px;
+}
+
+@mixin montserrat_bold {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 60px;
+    letter-spacing: 4.5px;
+}
+
+@mixin montserrat_extrabold {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 25px;
+}
